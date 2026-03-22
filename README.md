@@ -1,7 +1,10 @@
-# PORTFOLIO
+
 # 🌐 Mohammed Saad Advanced Portfolio  
 ### 🚀 Modern Interactive Portfolio (Animations • Skills • Projects • Certifications • Contact)
+🚧 **Work in Progress!**  
+I’m actively refining and enhancing this project — 🚀 deployment is coming soon, and I’ll be sharing the live link shortly. Stay tuned! 🔥
 
+---
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Advance-HTML-CSS-JAVASCRIPT.advanced-portfolio)
 ![Project Type](https://img.shields.io/badge/Project-Advanced%20Portfolio-blue)
 ![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5)
@@ -10,12 +13,19 @@
 ![UI](https://img.shields.io/badge/UI-Modern-green)
 ![Animations](https://img.shields.io/badge/Animations-CSS%20%2B%20JS-purple)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-yellow)
+![Deployment](https://img.shields.io/badge/Deployment-Coming%20Soon-blue)
+![Maintained](https://img.shields.io/badge/Maintained-Active-brightgreen)
 
 ---
 
 > 🚀 **A modern, fully responsive portfolio showcasing projects, skills, certifications, and interactive UI with smooth animations.**
 
 ---
+
+## 🌐 Live Demo  
+
+🚧 Deployment in progress — live link coming soon!
 
 ## 🌟 Overview  
 
@@ -153,3 +163,73 @@ Shows real-world problem-solving using automation.
 ---
 
 ## 📁 Project Structure  
+
+```
+Advance-HTML-CSS-JAVASCRIPT/
+│
+├── advanced_portfolio.html
+└── README.md
+```
+
+---
+
+## 📸 Code Highlights  
+
+### 🔹 Fade-in Animation (Intersection Observer)  
+```javascript
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('appear');
+    observer.unobserve(entry.target);
+  });
+});
+```
+
+---
+
+### 🔹 Form Submission Handling  
+```javascript
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Thank you for your message!');
+});
+```
+
+---
+
+### 🔹 Skill Progress Bars  
+```css
+.bar span {
+  background: var(--accent-color);
+}
+```
+
+---
+
+## 📈 Future Improvements  
+
+- 🌙 Add dark mode  
+- 🎨 Use animation libraries (AOS / GSAP)  
+- 🌍 Deploy with custom domain  
+- 📊 Add project filtering  
+- 🧠 Integrate AI chatbot  
+
+---
+
+## 📬 Contact  
+
+📧 Email: [555mohammedsaad@gmail.com](mailto:555mohammedsaad@gmail.com)  
+📱 Phone: +91-9963058044  
+🔗 LinkedIn: https://www.linkedin.com/in/mohammed-saad-tech  
+
+---
+
+## 👨‍💻 Author  
+
+**Mohammed Saad**  
+💡 AI • Web Development • Cloud Enthusiast
+
+## 🏁 Status  
+
+🚧 Work in Progress – deployment coming soon!
