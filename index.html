@@ -2170,7 +2170,112 @@
         z-index: 1005;
       }
     }
-        
+
+        /* Hide Progress Bars and Create Modern Skill Badges */
+    .skill-list-bars {
+      display: flex;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skill-category li {
+      display: inline-block;
+      width: auto !important;
+      margin-bottom: 0 !important;
+    }
+    .skill-category li p {
+      background: var(--card-bg);
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      box-shadow: 0 2px 5px var(--card-shadow);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .skill-category li p i {
+      font-size: 1.2rem;
+    }
+    .skill-category li p:hover {
+      border-color: #8b5cf6;
+      background: rgba(139, 92, 246, 0.1);
+      color: #8b5cf6;
+      box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
+      transform: translateY(-2px);
+    }
+    .skill-category .progress {
+      display: none !important; /* Hides the progress bars entirely */
+    }
+
+
+        /* Stats Section Styles */
+    .stats-section {
+      padding: 3rem 0;
+      background: var(--bg-primary); 
+    }
+    .stats-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      flex: 1;
+      min-width: 250px;
+      background: var(--card-bg);
+      padding: 2.5rem 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 30px var(--card-shadow);
+      border: 1px solid var(--border-color);
+      transition: transform 0.3s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+    .stat-card h3 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0 0 0.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .stat-card .stat-text {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin: 0;
+    }
+
+        /* Show More Button */
+    .show-more-btn {
+      display: inline-block;
+      margin: 1rem auto 2rem;
+      padding: 10px 24px;
+      background: transparent;
+      color: #8b5cf6;
+      border: 2px solid #8b5cf6;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .show-more-btn:hover {
+      background: #8b5cf6;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    }
+    .show-more-btn i {
+      margin-left: 8px;
+    }
   </style>
 </head>
 
@@ -2247,6 +2352,26 @@
       </div>
   </section>
 
+    <!-- Stats Section -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3><span class="stat-number" data-target="150">0</span>+</h3>
+          <p class="stat-text">GitHub Commits (2026)</p>
+        </div>
+        <div class="stat-card">
+          <h3><span class="stat-number" data-target="12">0</span>+</h3>
+          <p class="stat-text">Projects Completed</p>
+        </div>
+        <div class="stat-card">
+          <h3><span class="stat-number" data-target="2">0</span>+</h3>
+          <p class="stat-text">Years of Building</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section id="about">
     <div class="container">
@@ -2276,6 +2401,36 @@
     <div class="container">
       <h2>Work Experience & Internships</h2>
       <div class="experience-container">
+
+                <!-- Internship (1M1B) -->
+        <div class="experience-item">
+          
+          <!-- Custom CSS Logo -->
+          <div class="css-logo-1m1b" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.2rem;">
+            <div style="background: linear-gradient(135deg, #FF9933, #FF6600); width: 55px; height: 55px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; font-weight: 900; font-family: 'Arial', sans-serif; line-height: 1; box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);">
+              <span style="font-size: 18px; letter-spacing: -1px; margin-bottom: 2px;">1M</span>
+              <span style="font-size: 18px; letter-spacing: -1px;">1B</span>
+            </div>
+            <div style="color: #FF6600; font-weight: 900; font-size: 1.4rem; letter-spacing: 0.5px; text-transform: uppercase; line-height: 1.1;">
+              1 Million<br><span style="color: #FF6600; font-size: 0.7em; font-weight: 700;">FOR 1 BILLION</span>
+            </div>
+          </div>
+          
+          <div class="experience-header">
+            <h3>AI for Sustainability Virtual Intern</h3>
+            <span class="company">1M1B (1 Million for 1 Billion) | Remote</span>
+            <span class="duration">May 2026 - Jun 2026 · 2 mos</span>
+          </div>
+          <ul class="experience-details">
+            <li>Contributed to AI-driven sustainability initiatives by applying Artificial Intelligence to solve real-world environmental challenges aligned with the United Nations Sustainable Development Goals (SDGs).</li>
+            <li>Developed EcoSort AI – Intelligent Waste Segregation & Recycling Assistant to support SDG 12: Responsible Consumption & Production.</li>
+            <li>Built an AI-powered web application capable of classifying waste through both text and image inputs. Integrated Groq API with LLaMA 3.3 70B and LLaMA 4 Scout Vision models for intelligent waste identification and sustainability recommendations.</li>
+            <li>Designed prompt engineering workflows to generate disposal guidance, environmental impact analysis, and eco-friendly recommendations.</li>
+            <li>Implemented a sustainability scoring system to encourage responsible waste management practices.</li>
+          </ul>
+          
+          <a href="images/real.png" target="_blank" class="certificate-view exp-btn">View Certificate</a>
+        </div>
 
         <!-- Internship 1 -->
         <div class="experience-item">
@@ -2681,6 +2836,7 @@
             <div class="bar"><span style="width:80%"></span></div>
             <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
             <div class="bar"><span style="width:80%"></span></div>
+            <p><i class="fa-brands fa-js" style="color: #F7DF1E;"></i> JavaScript</p>
             <p><i class="fa-brands fa-react"></i> React</p>
             <div class="bar"><span style="width:75%"></span></div>
           </div>
@@ -2692,6 +2848,7 @@
           <div class="skill-list-bars">
             <p><i class="fa-brands fa-node-js"></i> Node.js</p>
             <div class="bar"><span style="width:60%"></span></div>
+            <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" style="width: 35px; height: 35px;" alt="Express"/> Express.js</p>
             <p><i class="fa-solid fa-bolt"></i> FastAPI</p>
             <div class="bar"><span style="width:80%"></span></div>
           </div>
@@ -3575,6 +3732,89 @@
           }
         });
       }
+    });
+  </script>
+    <!-- Stats Counter Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".stat-number");
+      let hasRun = false;
+
+      const runCounter = () => {
+        counters.forEach(counter => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            const speed = 100;
+            const inc = target / speed;
+
+            if (count < target) {
+              counter.innerText = Math.ceil(count + inc);
+              setTimeout(updateCount, 20);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      };
+
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting && !hasRun) {
+          runCounter();
+          hasRun = true;
+        }
+      }, { threshold: 0.3 });
+
+      const statsSection = document.getElementById("stats");
+      if (statsSection) {
+        observer.observe(statsSection);
+      }
+    });
+  </script>
+
+    <!-- Show More Logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const groups = document.querySelectorAll(".certification-group");
+      
+      groups.forEach(group => {
+        const items = group.querySelectorAll(".certification-item");
+        if (items.length > 3) {
+          // Hide items beyond the 3rd
+          for (let i = 3; i < items.length; i++) {
+            items[i].style.display = "none";
+          }
+          
+          // Create Show More button
+          const btnContainer = document.createElement("div");
+          btnContainer.style.textAlign = "center";
+          
+          const btn = document.createElement("button");
+          btn.className = "show-more-btn";
+          btn.innerHTML = 'Show More <i class="fas fa-chevron-down"></i>';
+          
+          btn.addEventListener("click", () => {
+            const isExpanded = btn.classList.contains("expanded");
+            if (isExpanded) {
+              for (let i = 3; i < items.length; i++) {
+                items[i].style.display = "none";
+              }
+              btn.innerHTML = 'Show More <i class="fas fa-chevron-down"></i>';
+              btn.classList.remove("expanded");
+            } else {
+              for (let i = 3; i < items.length; i++) {
+                items[i].style.display = "flex";
+              }
+              btn.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+              btn.classList.add("expanded");
+            }
+          });
+          
+          btnContainer.appendChild(btn);
+          group.parentNode.insertBefore(btnContainer, group.nextSibling);
+        }
+      });
     });
   </script>
 </body>
