@@ -2176,43 +2176,37 @@
       display: flex;
       flex-direction: row !important;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 12px !important;
     }
-    .skill-category li {
-      display: inline-block;
-      width: auto !important;
-      margin-bottom: 0 !important;
+    
+    .skill-list-bars .bar {
+      display: none !important;
     }
-    .skill-category li p {
-      background: var(--card-bg);
-      padding: 8px 16px;
-      border-radius: 20px;
-      border: 1px solid var(--border-color);
-      font-size: 0.95rem;
-      font-weight: 500;
+    
+    .skill-list-bars p {
+      background: rgba(139, 92, 246, 0.1);
       color: var(--text-primary);
-      box-shadow: 0 2px 5px var(--card-shadow);
-      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 25px;
+      margin: 0 !important;
+      font-size: 1.1rem;
+      border: 1px solid rgba(139, 92, 246, 0.3);
       display: flex;
       align-items: center;
       gap: 8px;
+      transition: all 0.3s ease;
     }
-    .skill-category li p i {
-      font-size: 1.2rem;
-    }
-    .skill-category li p:hover {
-      border-color: #8b5cf6;
-      background: rgba(139, 92, 246, 0.1);
-      color: #8b5cf6;
-      box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
+
+    .skill-list-bars p:hover {
+      background: rgba(139, 92, 246, 0.2);
       transform: translateY(-2px);
-    }
-    .skill-category .progress {
-      display: none !important; /* Hides the progress bars entirely */
+      box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
     }
 
-
-        /* Stats Section Styles */
+    .skill-list-bars p i {
+      font-size: 2.2rem;
+    }
+    /* Stats Section Styles */
     .stats-section {
       padding: 3rem 0;
       background: var(--bg-primary); 
