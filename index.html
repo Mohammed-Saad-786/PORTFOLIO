@@ -2173,10 +2173,12 @@
 
         /* Hide Progress Bars and Create Modern Skill Badges */
     .skill-list-bars {
-      display: flex;
+      display: flex !important;
       flex-direction: row !important;
-      flex-wrap: wrap;
+      flex-wrap: wrap !important;
       gap: 12px !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
     }
     
     .skill-list-bars .bar {
@@ -2184,28 +2186,41 @@
     }
     
     .skill-list-bars p {
-      background: rgba(139, 92, 246, 0.1);
-      color: var(--text-primary);
-      padding: 8px 16px;
-      border-radius: 25px;
+      background: rgba(139, 92, 246, 0.1) !important;
+      color: var(--text-primary) !important;
+      padding: 8px 16px !important;
+      border-radius: 25px !important;
       margin: 0 !important;
-      font-size: 1.1rem;
-      border: 1px solid rgba(139, 92, 246, 0.3);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
+      font-size: 0.95rem !important;
+      font-weight: 600 !important;
+      border: 1px solid rgba(139, 92, 246, 0.3) !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      height: 42px !important;
+      box-sizing: border-box !important;
+      transition: all 0.3s ease !important;
     }
 
     .skill-list-bars p:hover {
-      background: rgba(139, 92, 246, 0.2);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2);
+      background: rgba(139, 92, 246, 0.2) !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 4px 10px rgba(139, 92, 246, 0.2) !important;
     }
 
-    .skill-list-bars p i {
-      font-size: 2.2rem;
+    /* Force ALL icons/images inside badges to be exactly the same size */
+    .skill-list-bars p i, 
+    .skill-list-bars p img, 
+    .skill-list-bars p svg {
+      font-size: 1.2rem !important;
+      width: 1.2rem !important;
+      height: 1.2rem !important;
+      object-fit: contain !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
+    
     /* Stats Section Styles */
     .stats-section {
       padding: 3rem 0;
