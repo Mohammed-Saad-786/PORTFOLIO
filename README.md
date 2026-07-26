@@ -54,6 +54,19 @@ This portfolio was built to combine clean UI/UX, interactive experiences, and mo
 - Smooth animations & transitions
 - Interactive hover effects
 - Responsive layout for all devices
+  
+### 🌙 Dark Mode
+- One-click theme switching
+- Light & Dark mode support
+- Smooth theme transition animations
+- User preference saved for future visits
+- Consistent styling across all sections
+
+### 📊 GitHub Statistics
+- GitHub profile statistics
+- Total commits overview
+- Repository count
+- Development experience highlights
 
 ### 🤖 Ask Saad AI
 - Built-in AI chatbot assistant
@@ -155,8 +168,6 @@ portfolio/
 
 # 🌟 Future Improvements
 
-* 🌙 Dark/Light mode toggle
-* 📊 GitHub stats integration
 * 🧠 Enhanced AI assistant
 * ⚡ Performance optimization
 * 🎵 More interactive animations
