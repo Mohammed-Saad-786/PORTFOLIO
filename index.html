@@ -216,10 +216,16 @@
       box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
     }
 
-    .hamburger {
+      .hamburger {
       display: none;
       font-size: 1.5rem;
       cursor: pointer;
+      /* Android Touch Fixes */
+      padding: 12px;
+      margin: -12px; /* Offsets padding so it doesn't break alignment */
+      position: relative;
+      z-index: 1001;
+      touch-action: manipulation;
     }
 
     #home {
